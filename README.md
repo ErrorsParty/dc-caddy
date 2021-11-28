@@ -8,35 +8,35 @@ the Errors Party website and intranet.
 
 1. Clone the repository on your machine/server.
 
-```sh
-git clone https://github.com/ErrorsParty/dc-caddy /srv/ep-caddy
-```
+   ```sh
+   git clone https://github.com/ErrorsParty/dc-caddy /srv/ep-caddy
+   ```
 
 2. Navigate into the directory.
 
-```sh
-cd /srv/ep-caddy
-```
+   ```sh
+   cd /srv/ep-caddy
+   ```
 
 3. Create a docker network for the proxy (frontend) if you haven't already.
 
-```sh
-docker network create proxy
-```
+   ```sh
+   docker network create proxy
+   ```
 
 4. Copy the environment example file.
 
-```sh
-cp .env.example .env
-```
+   ```sh
+   cp .env.example .env
+   ```
 
 5. Modify the environment file to your needs.
 
 6. Start the docker compose project.
 
-```sh
-docker compose up -d
-```
+   ```sh
+   docker compose up -d
+   ```
 
 ## Trust Root CA
 
