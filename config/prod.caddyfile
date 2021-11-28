@@ -1,0 +1,26 @@
+{
+	log {
+		output file /logs/caddy/caddy.log
+		format json
+	}
+}
+
+{$host} {
+	import _config.caddyfile
+	redir https://www.{$host} 301
+}
+
+www.{$host} {
+	import _config.caddyfile
+	reverse_proxy {$proxy_www}
+}
+
+api.{$host} {
+	import _config.caddyfile
+	reverse_proxy {$proxy_api}
+}
+
+id.{$host} {
+	import _config.caddyfile
+	reverse_proxy {$proxy_id}
+}

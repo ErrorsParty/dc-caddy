@@ -1,0 +1,4 @@
+header / "Strict-Transport-Security: max-age=31536000;"
+header / "X-Frame-Options: sameorigin;"
+header / "X-Content-Type-Options: nosniff;"
+respond /caddy/healthcheck ok

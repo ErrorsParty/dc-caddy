@@ -1,0 +1,14 @@
+*
+!/config/
+!/config/*.caddyfile
+!/docs/
+!/docs/*.md
+!/tls/
+!/tls/_.crt
+!/tls/_.key
+!/tls/ca.crt
+!/.env.example
+!/.gitignore
+!/Caddy.dockerfile
+!/docker-compose.yaml
+!/README.md
