@@ -24,3 +24,8 @@ id.{$host} {
 	import _config.caddyfile
 	reverse_proxy {$proxy_id}
 }
+
+wiki.{$host} {
+	import _config.caddyfile
+	reverse_proxy {$proxy_wiki}
+}
